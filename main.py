@@ -1,4 +1,4 @@
-from stats import get_book_word_count
+from stats import get_book_word_count, get_book_char_count
 
 
 def get_book_text(file_path):
@@ -15,6 +15,10 @@ def main():
     book_word_count = get_book_word_count(book_text)
 
     print(f"Found {book_word_count} total words")
+
+    book_char_count = get_book_char_count(book_text)
+
+    print(book_char_count)
 
 
 main()
