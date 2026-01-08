@@ -1,3 +1,6 @@
+from stats import get_book_word_count
+
+
 def get_book_text(file_path):
 
     file_contents = ""
@@ -6,11 +9,6 @@ def get_book_text(file_path):
         file_contents = f.read()
 
     return file_contents
-
-def get_book_word_count(book_text):
-    return len(book_text.split())
-    
-
 
 def main():
     book_text = get_book_text("./books/frankenstein.txt")
