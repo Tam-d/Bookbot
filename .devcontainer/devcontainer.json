@@ -1,0 +1,7 @@
+{
+    "name": "Bookbot",
+    
+    "build": {
+        "dockerfile": "../Dockerfile"
+    }
+}
